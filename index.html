@@ -2,7 +2,7 @@
   @Author: Your name
   @Date:   2022-04-09 19:25:22
   @Last Modified by:   Your name
-  @Last Modified time: 2022-04-12 07:53:39
+  @Last Modified time: 2022-04-14 09:00:40
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Wekeza </title>
   <!-- Favicons -->
@@ -21,66 +22,64 @@
 <body>
   <!--Navigation bar-->
   <header>
-    <nav class="navbar">
-      <div>
-        <img class="logo" src="./assets/images/logo.png" alt="logo">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <img class="logo " src="./assets/images/logo.png" alt="logo">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navlist ms-auto">
+            <li class="navitem"><a href="#home " class="active">Home</a></li>
+            <li class="navitem"><a href="#about">About</a></li>
+            <li class="navitem"><a href="#projects">Projects</a></li>
+            <li class="navitem"><a href="#testimonials">Testimonials</a></li>
+            <li class="navitem"><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <ul class="navlist">
-        <li class="navitem"><a href="home" class="active">Home</a></li>
-        <li class="navitem"><a href="about">About</a></li>
-        <li class="navitem"><a href="projects">Projects</a></li>
-        <li class="navitem"><a href="testimonials">Testimonials</a></li>
-        <li class="navitem"><a href="contacts">Contact</a></li>
-      </ul>
-      <form class="d-flex navlist form">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      </div>
-    </nav>
   </header>
 
   <!--Homepage-->
-  <section id="home">
-    <div class="background-image">
-      <div>
-        <p>
-        <h2>introducing</h2><br />
-        <h1>Wekeza cooperative society</h1>
-        <h2>mwananchi to mwananchi</h2>
-        </p>
+  <section id="home d-sm-flex text-center text-sm-start">
+    <div class="container-fluid background-image img-fluid">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h2 class="home-text">Intoducing</h2>
+            <h1 class="boxed my-2"><span class="text-success">Wekeza Co-op<br />Society</span></h1>
+            <h2 class="home-text">Mwananchi-Mwanachi</h2>
+            <button class="btn btn-success btn-lg">Join us</button>
+          </div>
+          <img class="img-fluid w-25 pt-5 mx-5 d-none d-sm-block" src="./assets/images/wekeza (1).png" alt="screenshot">
+        </div>
       </div>
     </div>
   </section>
 
   <!--About-->
   <section id="about">
-    <div class="container">
+    <div class="container-md pt-5 pb-3">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <h3 class="headings"><strong>Mission</strong></h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam at est obcaecati magni amet saepe
-            nam.
-            Quae cumque laboriosam culpa, hic accusantium perspiciatis odio natus molestias tempore? Ut, sit.</p>
+          <p>Target financial service in our communities based on strong customer relationships by strengthening and
+            combining our
+            technology, experience, and financial strength.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <h3 class="headings"><strong>Vision</strong></h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam at est obcaecati magni amet saepe
-            nam.
-            Quae cumque laboriosam culpa, hic accusantium perspiciatis odio natus molestias tempore? Ut, sit.</p>
+          <p>We aspire to become the locally owned, independent community bank of choice for small and medium-sized
+            businesses,
+            professionals, and individuals in central and southern region.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <h3 class="headings"><strong>Values</strong></h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam at est obcaecati magni amet saepe
-            nam.
-            Quae cumque laboriosam culpa, hic accusantium perspiciatis odio natus molestias tempore? Ut, sit.</p>
+          <p>· Integrity and honesty. We will always take the high road by practicing the utmost ethical standards,
+            and by honoring our commitments.
+          </p>
         </div>
       </div>
     </div>
@@ -88,32 +87,26 @@
 
   <!--Projects-->
   <section id="projects">
-    <div class="container">
-      <div class="row row-box">
-        <div class="box">
-          <h3 class="services-heading">Digital Marketing</h3>
-          <p>Marketing on social media platforms, SEOs amd social media campaigns is a skill that i have acquired
-            studying
-            online. Call to action buttons, use of hashtags and tagging other accounts to promote brands and push
-            content
-            is part of what i do.
-          </p>
-        </div>
-        <div class="box">
-          <h3 class="services-heading">Web design</h3>
-          <p>Designing and developing responsive websites also falls in the category of services that i offer. Currently
-            learning
-            on the job currently well versed in HTML and CSS.
-          </p>
+    <div class="container pt-4 pb-3">
+      <div class="row row-box boxes">
+        <div class="box box-one text-light">
 
+          <h3 class="services-heading">Grocery</h3>
+          <p>Healthy lifestle and healthy eating is one of the big agendas of the Wekeza Cooperative society.
+            We have set grocery shops around the city to promote healthy lifestyle.
+          </p>
         </div>
-        <div class="box">
-          <h3 class="services-heading">Graphic design</h3>
-          <p>Designing is an area where your creativity is tested and is an area where you are able to stand out as a
-            designer. Adobe creative, canva and figma are a few to mention sites where i design my posters, Logos and
-            websites
-            consequtively and present them to correct any errors put.
-            </a></p>
+        <div class="box box-two text-light">
+          <h3 class="services-heading">Tree planting</h3>
+          <p>At Wekeza we environmental conservation is key. betwern 2020 and 2022 we have planted one thousand
+            trees all over the country sensitizing the issues of environmental conservation.
+          </p>
+        </div>
+        <div class="box box-three text-light">
+          <h3 class="services-heading">Transport</h3>
+          <p>We sort to invest the fast growing matatu business under the wave of matwana culture. Our profits have
+            increased by 15.4% after starting out the venture.
+          </p>
         </div>
       </div>
     </div>
@@ -121,9 +114,9 @@
 
   <!--Testimonials-->
   <section id="testimonials">
-    <div class="container">
-      <div class="card-group">
-        <div class="card">
+    <div class="container pt-5 pb-5">
+      <div class="card-group ">
+        <div class="card px-1">
           <img src="./assets/images/analytics.jpeg" class="card-img-top" alt="analytics" style="border-radius: 3px;">
           <div class="card-body">
             <h5 class="card-title">Analytics</h5>
@@ -135,7 +128,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card px-1">
           <img src="./assets/images/savings.jpeg" class="card-img-top" alt="Savings"
             style="height:fit-content; border-radius: 5px;">
           <div class="card-body">
@@ -147,7 +140,7 @@
             <p class="card-text"><small class="text-muted">Otieno Ooko, online</small></p>
           </div>
         </div>
-        <div class="card">
+        <div class="card px-1">
           <img src="./assets/images/house.jpeg" class="card-img-top" alt="housing" style="border-radius: 5px;">
           <div class="card-body">
             <h5 class="card-title">Housing</h5>
@@ -181,6 +174,12 @@
             <input type="text" placeholder="comment">
             <input class="btn btn-success" type="submit" value="Submit">
           </form>
+          <div class="pt-5 py-4">
+            <i class="bi bi-facebook mx-2"></i>
+            <i class="bi bi-instagram mx-2"></i>
+            <i class="bi bi-twitter mx-2"></i>
+            <i class="bi bi-whatsapp mx-2"></i>
+          </div>
         </div>
         <div class="col-md-3">
           <h4 class="mb-20">BRANCHES</h4>
@@ -190,6 +189,9 @@
             <li><span>Nakuru</span></li>
             <li><span>Machakos</span></li>
           </ul>
+        </div>
+        <div class="container text-center pt-5">
+          <p class="footer-text">All rights reserved @2022</p>
         </div>
       </div>
     </div>
