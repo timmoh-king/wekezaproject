@@ -2,7 +2,7 @@
  * @Author: Your name
  * @Date:   2022-04-09 19:25:47
  * @Last Modified by:   Your name
- * @Last Modified time: 2022-04-14 02:01:03
+ * @Last Modified time: 2022-04-18 15:58:17
  */
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 body,html{
@@ -21,7 +21,7 @@ body::before{
     }
 }
 .navbar{
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(245, 245, 245);
     height: 75px;
 }
 .logo{
@@ -47,9 +47,9 @@ body::before{
 nav ul li a:hover{
 color: rgb(106, 138, 48);
 }
-nav ul li.active{
+/*nav ul li.active{
     color:rgb(106, 138, 48);
-}
+}*/
 .image img{
     width: 100%;
     opacity: 0.75;
@@ -81,7 +81,7 @@ nav ul li.active{
     margin-top: 20px;
 }
 .services-heading{
-    margin-top: 300px;
+    margin-top: 350px;
 }
 .row-box{
     background-color: #ffffff;
@@ -90,8 +90,7 @@ nav ul li.active{
     display:flex;
     color:black;
     flex-direction: column;
-    width: 359px;
-    height: 480px;
+    width:auto;
     border: 4px solid rgb(20, 102, 88);
     margin:10px 10px 10px 10px;
     align-items: center;
@@ -117,24 +116,24 @@ nav ul li.active{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
-    width:355px;
-    height: 475px;  
+    width:auto;
+    height: 520px;  
 }
 .box-two{
     background-image: url("/assets/images/tree planting.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
-    width:355px;
-    height: 475px; 
+    width:auto;
+    height: 520px; 
 }
 .box-three{
     background-image: url("/assets/images/transport.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
-    width:355px;
-    height: 475px; 
+    width:auto;
+    height: 520px; 
 }
 #testimonials{
     padding-top: 50px;
@@ -153,12 +152,20 @@ nav ul li.active{
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
   }
 .footer-form{
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .footer-text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+}
+.media-icons{
+    text-decoration: none;
+    list-style: none;
+    display: flexbox;
+    margin-inline: 5px;
 }

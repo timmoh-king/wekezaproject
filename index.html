@@ -2,7 +2,7 @@
   @Author: Your name
   @Date:   2022-04-09 19:25:22
   @Last Modified by:   Your name
-  @Last Modified time: 2022-04-14 09:00:40
+  @Last Modified time: 2022-04-18 17:23:08
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,7 @@
 
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navlist ms-auto">
-            <li class="navitem"><a href="#home " class="active">Home</a></li>
+            <li class="navitem"><a href="#home">Home</a></li>
             <li class="navitem"><a href="#about">About</a></li>
             <li class="navitem"><a href="#projects">Projects</a></li>
             <li class="navitem"><a href="#testimonials">Testimonials</a></li>
@@ -43,7 +43,7 @@
   </header>
 
   <!--Homepage-->
-  <section id="home d-sm-flex text-center text-sm-start">
+  <section id="home" class="d-sm-flex text-center text-sm-start">
     <div class="container-fluid background-image img-fluid">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
@@ -51,9 +51,9 @@
             <h2 class="home-text">Intoducing</h2>
             <h1 class="boxed my-2"><span class="text-success">Wekeza Co-op<br />Society</span></h1>
             <h2 class="home-text">Mwananchi-Mwanachi</h2>
-            <button class="btn btn-success btn-lg">Join us</button>
+            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#joinUs">Join us</button>
           </div>
-          <img class="img-fluid w-25 pt-5 mx-5 d-none d-sm-block" src="./assets/images/wekeza (1).png" alt="screenshot">
+          <img class="img-fluid w-25 pt-5 mx-5  " src="./assets/images/wekeza (1).png" alt="screenshot">
         </div>
       </div>
     </div>
@@ -63,21 +63,21 @@
   <section id="about">
     <div class="container-md pt-5 pb-3">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-12 col-lg-4 img-fluid">
           <h3 class="headings"><strong>Mission</strong></h3>
           <p>Target financial service in our communities based on strong customer relationships by strengthening and
             combining our
             technology, experience, and financial strength.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-12 col-lg-4 img-fluid">
           <h3 class="headings"><strong>Vision</strong></h3>
           <p>We aspire to become the locally owned, independent community bank of choice for small and medium-sized
             businesses,
             professionals, and individuals in central and southern region.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-12 col-lg-4 img-fluid">
           <h3 class="headings"><strong>Values</strong></h3>
-          <p>· Integrity and honesty. We will always take the high road by practicing the utmost ethical standards,
+          <p> Integrity and honesty. We will always take the high road by practicing the utmost ethical standards,
             and by honoring our commitments.
           </p>
         </div>
@@ -89,19 +89,23 @@
   <section id="projects">
     <div class="container pt-4 pb-3">
       <div class="row row-box boxes">
+        <div class="col-md-12 col-lg-4">
         <div class="box box-one text-light">
-
           <h3 class="services-heading">Grocery</h3>
           <p>Healthy lifestle and healthy eating is one of the big agendas of the Wekeza Cooperative society.
             We have set grocery shops around the city to promote healthy lifestyle.
           </p>
         </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
         <div class="box box-two text-light">
           <h3 class="services-heading">Tree planting</h3>
           <p>At Wekeza we environmental conservation is key. betwern 2020 and 2022 we have planted one thousand
             trees all over the country sensitizing the issues of environmental conservation.
           </p>
         </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
         <div class="box box-three text-light">
           <h3 class="services-heading">Transport</h3>
           <p>We sort to invest the fast growing matatu business under the wave of matwana culture. Our profits have
@@ -109,17 +113,19 @@
           </p>
         </div>
       </div>
+      </div>
     </div>
   </section>
-
-  <!--Testimonials-->
+  
+<!--Testimonials-->
   <section id="testimonials">
-    <div class="container pt-5 pb-5">
-      <div class="card-group ">
-        <div class="card px-1">
-          <img src="./assets/images/analytics.jpeg" class="card-img-top" alt="analytics" style="border-radius: 3px;">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Analytics</h5>
+            <img src="./assets/images/analytics.jpeg" class="card-img-top img-fluid" alt="analytics" style="border-radius: 3px;">
+            <h5 class="card-title pt-2">Analytics</h5>
             <p class="card-text">Having an analytics part where we can see our trends on how we have been performing for
               the last years
               is what makes Wekeza the best cooperative society and I am looking foward to invest with them.
@@ -127,12 +133,13 @@
             <p class="card-text"><small class="text-muted">Mary Muthoni, member</small></p>
           </div>
         </div>
-
-        <div class="card px-1">
-          <img src="./assets/images/savings.jpeg" class="card-img-top" alt="Savings"
-            style="height:fit-content; border-radius: 5px;">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Savings</h5>
+            <img src="./assets/images/savings.jpeg" class="card-img-top img-fluid" alt="Savings"
+            style="height:fit-content; border-radius: 5px;">
+            <h5 class="card-title pt-2">Savings</h5>
             <p class="card-text">Since I started saving with Wekeza society I have a clear copy of my savings and I can
               account
               for my finances compared to before. I am looking foward to brighter days and more investment opportunities
@@ -140,10 +147,12 @@
             <p class="card-text"><small class="text-muted">Otieno Ooko, online</small></p>
           </div>
         </div>
-        <div class="card px-1">
-          <img src="./assets/images/house.jpeg" class="card-img-top" alt="housing" style="border-radius: 5px;">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Housing</h5>
+            <img src="./assets/images/house.jpeg" class="card-img-top img-fluid" alt="housing" style="border-radius: 5px;">
+            <h5 class="card-title pt-2">Housing</h5>
             <p class="card-text">Very soon we want to venture into the real estate market and start providing affordable
               housing to
               our members being the first priority working and walking hand in hand with the country's vision 2030
@@ -152,51 +161,113 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
   </section>
 
+  
   <!--Contacts-->
   <section id="contacts">
     <div class="container footer">
       <div class="row">
-        <div class="col-md-3">
-          <h4 class="mb-20">GET IN TOUCH</h4>
-          <ul class="contact-details">
+        <div class="col-md-12 col-lg-3 ">
+          <h4 class="mb-20  text-center">GET IN TOUCH</h4>
+          <ul class="contact-details  text-center">
             <li><span>23 Main, Street</span></li>
             <li><span>Nairobi, Kenya</span></li>
             <li><span>+254 718543357</span></li>
             <li><span>timothykariuki43@gmail.com</span></li>
           </ul>
         </div>
-        <div class="col-md-6 footer-form">
+        <div class="col-md-12 col-lg-6 footer-form ">
           <h5>Write a message</h5>
           <form>
             <input type="text" placeholder="comment">
             <input class="btn btn-success" type="submit" value="Submit">
           </form>
-          <div class="pt-5 py-4">
-            <i class="bi bi-facebook mx-2"></i>
-            <i class="bi bi-instagram mx-2"></i>
-            <i class="bi bi-twitter mx-2"></i>
-            <i class="bi bi-whatsapp mx-2"></i>
+          <div class=" pt-5 py-4">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr">
+              <i class="bi bi-facebook media-icons"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="bi bi-instagram media-icons"></i>
+            </a>
+            <a href="https://twitter.com/home?lang=en">
+              <i class="bi bi-twitter media-icons"></i>
+            </a>
+            <a href="https://web.whatsapp.com/">
+              <i class="bi bi-whatsapp media-icons"></i>
+            </a>
           </div>
         </div>
-        <div class="col-md-3">
-          <h4 class="mb-20">BRANCHES</h4>
-          <ul class="contact-details">
+        <div class="col-md-12 col-lg-3 ">
+          <h4 class=" text-center mb-20">BRANCHES</h4>
+          <ul class="contact-details  text-center">
             <li><span>Nairobi</span></li>
             <li><span>Kisumu</span></li>
             <li><span>Nakuru</span></li>
             <li><span>Machakos</span></li>
           </ul>
         </div>
-        <div class="container text-center pt-5">
-          <p class="footer-text">All rights reserved @2022</p>
+        <div class="container text-center mb-1">
+          <p class="footer-text">All rights reserved &copy;2022</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Modal -->
+<div class="modal fade" id="joinUs" tabindex="-1" aria-labelledby="joinUs" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="joinUs">Wekeza fill out form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Please enter your details</p>
+        <form>
+          <div class="mb-1">
+            <label for="first-name" class="col-form-label">
+              First name:
+            </label>
+            <input type="text" class="form-control" id="first-name">
+          </div>
+          <div class="mb-1">
+            <label for="last-name" class="col-form-label">
+              Last name:
+            </label>
+            <input type="text" class="form-control" id="last-name">
+          </div>
+          <div class="mb-1">
+            <label for="surname" class="col-form-label">
+              Surname:
+            </label>
+            <input type="text" class="form-control" id="surname">
+          </div>
+          <div class="mb-1">
+            <label for="phone" class="col-form-label">
+              Phone number:
+            </label>
+            <input type="number" class="form-control" id="phone">
+          </div>
+          <div class="mb-1">
+            <label for="email" class="col-form-label">
+              Email address:
+            </label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button onclick="submitForm()" type="button" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
   <script type="text/javascript" src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
