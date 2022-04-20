@@ -2,7 +2,7 @@
  * @Author: Your name
  * @Date:   2022-04-09 19:25:47
  * @Last Modified by:   Your name
- * @Last Modified time: 2022-04-18 15:58:17
+ * @Last Modified time: 2022-04-19 20:15:37
  */
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 body,html{
@@ -55,7 +55,7 @@ color: rgb(106, 138, 48);
     opacity: 0.75;
 }
 .background-image{
-    background-image: url("/assets/images/homepage.jpeg");
+    background-image: url("/assets/images/BG\ \(1\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
@@ -71,7 +71,7 @@ color: rgb(106, 138, 48);
     font-family: 'PT Sans', sans-serif;
     font-weight: 600;
     text-align: start;
-    color: rgb(183, 196, 0);
+    color: rgb(113, 126, 1);
 }
 .headings{
     align-items: center;
@@ -167,5 +167,4 @@ color: rgb(106, 138, 48);
     text-decoration: none;
     list-style: none;
     display: flexbox;
-    margin-inline: 5px;
 }

@@ -2,7 +2,7 @@
   @Author: Your name
   @Date:   2022-04-09 19:25:22
   @Last Modified by:   Your name
-  @Last Modified time: 2022-04-18 17:23:08
+  @Last Modified time: 2022-04-20 11:27:00
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@
         <img class="logo " src="./assets/images/logo.png" alt="logo">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-          <span class="navbar-toggler-icon"></span>
+          <span class=" bi bi-list "></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navmenu">
@@ -179,24 +179,24 @@
             <li><span>timothykariuki43@gmail.com</span></li>
           </ul>
         </div>
-        <div class="col-md-12 col-lg-6 footer-form ">
+        <div  class="col-md-12 col-lg-6 footer-form ">
           <h5>Write a message</h5>
-          <form>
+          <form >
             <input type="text" placeholder="comment">
-            <input class="btn btn-success" type="submit" value="Submit">
+           <button id="commentHere" class="btn btn-success" type="submit" value="Submit">Submit</button>
           </form>
-          <div class=" pt-5 py-4">
-            <a href="https://web.facebook.com/?_rdc=1&_rdr">
-              <i class="bi bi-facebook media-icons"></i>
+          <div class=" pt-5 ">
+            <a href="https://www.facebook.com/">
+              <i class="bi bi-facebook media-icons px-1"></i>
             </a>
             <a href="https://www.instagram.com/">
-              <i class="bi bi-instagram media-icons"></i>
+              <i class="bi bi-instagram media-icons px-1"></i>
             </a>
             <a href="https://twitter.com/home?lang=en">
-              <i class="bi bi-twitter media-icons"></i>
+              <i class="bi bi-twitter media-icons px-1"></i>
             </a>
             <a href="https://web.whatsapp.com/">
-              <i class="bi bi-whatsapp media-icons"></i>
+              <i class="bi bi-whatsapp media-icons px-1"></i>
             </a>
           </div>
         </div>
@@ -260,14 +260,15 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button onclick="submitForm()" type="button" class="btn btn-success">Submit</button>
+        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" id="joinForm" class="btn btn-success">Submit</button>
       </div>
     </div>
   </div>
 </div>
 
-  
+
+  </script>
   <script type="text/javascript" src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
